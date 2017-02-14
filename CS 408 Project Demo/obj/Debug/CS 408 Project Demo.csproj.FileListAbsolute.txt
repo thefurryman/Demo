@@ -1,0 +1,6 @@
+G:\Visual Studio Workspace\Projects\CS 408 Project Demo\CS 408 Project Demo\bin\Debug\CS 408 Project Demo.exe.config
+G:\Visual Studio Workspace\Projects\CS 408 Project Demo\CS 408 Project Demo\bin\Debug\CS 408 Project Demo.exe
+G:\Visual Studio Workspace\Projects\CS 408 Project Demo\CS 408 Project Demo\bin\Debug\CS 408 Project Demo.pdb
+G:\Visual Studio Workspace\Projects\CS 408 Project Demo\CS 408 Project Demo\obj\Debug\CS 408 Project Demo.csprojResolveAssemblyReference.cache
+G:\Visual Studio Workspace\Projects\CS 408 Project Demo\CS 408 Project Demo\obj\Debug\CS 408 Project Demo.exe
+G:\Visual Studio Workspace\Projects\CS 408 Project Demo\CS 408 Project Demo\obj\Debug\CS 408 Project Demo.pdb
