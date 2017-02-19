@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Collections;
 
 namespace CS_408_Project_Demo
 {
@@ -16,13 +15,30 @@ namespace CS_408_Project_Demo
             string[] tokens = input.Split(',');
 
             int[] nums = stringParser(tokens);
-            nums = insertionSort(nums);
+            nums = useRandomSort(nums);
            
             print(nums);
             Console.ReadLine();
         }
 
-        static int[] stringParser(string[] strArr)
+        public static int[] useRandomSort(int[] input)
+        {
+            Random rand = new Random();
+            int rNum = rand.Next(0, 2);
+            if (rNum == 0)
+            {
+                input = insertionSort(input);
+                Console.WriteLine("insertion sort");
+            }
+            else
+            {
+                input = bubbleSort(input);
+                Console.WriteLine("bubble sort");
+            }
+            return input;
+
+        }
+        public static int[] stringParser(string[] strArr)
         {
             int[] nums = new int[strArr.Length];
             int newInt;
@@ -38,7 +54,7 @@ namespace CS_408_Project_Demo
             return nums;
         }
 
-        static void print(int[] input)
+        public static void print(int[] input)
         {
             foreach (int s in input)
             {
@@ -46,7 +62,7 @@ namespace CS_408_Project_Demo
             }
         }
 
-        static int[] insertionSort(int[] input)
+        public static int[] insertionSort(int[] input)
         {
             int temp;
             for (int i = 1; i < input.Length; i++)
@@ -64,7 +80,7 @@ namespace CS_408_Project_Demo
             return input;
         }
 
-        static int[] bubbleSort(int[] input)
+        public static int[] bubbleSort(int[] input)
         {
             int n = input.Length;
             int k;
