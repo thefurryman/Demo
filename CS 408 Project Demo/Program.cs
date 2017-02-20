@@ -38,6 +38,7 @@ namespace CS_408_Project_Demo
             return input;
 
         }
+
         public static int[] stringParser(string[] strArr)
         {
             int[] nums = new int[strArr.Length];
